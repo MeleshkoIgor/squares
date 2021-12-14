@@ -20,4 +20,17 @@ class SQRServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldSqrNotNumber() {
+        SQRService service = new SQRService();
+        int min = 100;
+        int max = 300;
+        int expected = 8;
+
+        int actual = service.enumeration(min, max);
+
+        assertEquals(expected, actual);
+
+    }
 }
